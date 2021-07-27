@@ -289,7 +289,7 @@ def _mirror(bot, update, isTar=False, extract=False):
     else:
         tag = None
     if not bot_utils.is_url(link) and not bot_utils.is_magnet(link):
-        sendMessage('No download source provided', bot, update)
+        sendMessage('No download source provided. বিস্তারিত জানতে: https://telegra.ph/Bot-Commands-02-06 ', bot, update)
         return
 
     try:
